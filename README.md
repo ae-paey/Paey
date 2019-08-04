@@ -26,11 +26,16 @@ Here is a list of features that it has:
 ## Screenshot
 
 <p align="center">
-
-![Screenshot 1](https://i.ibb.co/P6TPYqG/1.png)
-![Screenshot 2](https://i.ibb.co/QdTCT6Y/2.png)
-![Screenshot 3](https://i.ibb.co/cvHrTLg/3.png)
-![Screenshot 4](https://i.ibb.co/cFNbrHt/4.png)
+  <img src="https://i.ibb.co/P6TPYqG/1.png">
+</p>
+<p align="center">
+  <img src="https://i.ibb.co/QdTCT6Y/2.png">
+</p>
+<p align="center">
+  <img src="https://i.ibb.co/cvHrTLg/3.png">
+</p>
+<p align="center">
+  <img src="https://i.ibb.co/cFNbrHt/4.png">
 </p>
 
 ## LICENSE
