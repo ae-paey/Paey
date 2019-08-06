@@ -25,7 +25,7 @@ class HomeController extends Controller
     public function index()
     {
       $user = auth()->user();
-      if ($user->company_name = '' | $user->ae_address = '') {
+      if (!$user->verified) {
         Mail::to($user->email)->send(new ProfileMail($user));
       }
       

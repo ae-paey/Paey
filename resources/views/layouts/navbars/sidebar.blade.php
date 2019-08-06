@@ -94,7 +94,7 @@
                           <ul class="nav nav-sm flex-column">
                               <li class="nav-item">
                                   <a class="nav-link" href="{{ route('profile.edit') }}">
-                                      {{ __('User profile') }}
+                                      {{ __('My Profile') }}
                                   </a>
                               </li>
                               <li class="nav-item">
@@ -109,7 +109,7 @@
                   <li class="nav-item">
                     <a class="nav-link" href="{{ route('profile.edit') }}">
                       <i class="ni ni-single-02"></i>
-                      {{ __('User profile') }}
+                      {{ __('My Profile') }}
                     </a>
                   </li>
                 @endif

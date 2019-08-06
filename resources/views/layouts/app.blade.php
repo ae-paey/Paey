@@ -85,7 +85,6 @@
 
         <!-- Firebase Scripts -->
         <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
-        <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
         <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-firestore.js"></script>
         <script>
           const firebaseConfig = {

@@ -116,6 +116,11 @@
                   Contact
                 </a>
               </li>
+              <li class="nav-item">
+                <a class="nav-link" href="{{ config('app.aepp_url') }}" target="_blank">
+                  æpp
+                </a>
+              </li>
               @if (Route::has('login'))
                 <li class="nav-item">
                   @auth
@@ -200,46 +205,10 @@
               </div>
               <div class="services-content">
                 <h3><a href="#">Customers support</a></h3>
-                <p>Our website has been built for easy access and efficient use</p>
+                <p>Our website has been built for easy access</p>
               </div>
             </div>
           </div>
-          <!-- Services item -->
-          {{-- <div class="col-md-6 col-lg-4 col-xs-12">
-            <div class="services-item wow fadeInRight" data-wow-delay="1.2s">
-              <div class="icon">
-                <i class="lni-layers"></i>
-              </div>
-              <div class="services-content">
-                <h3><a href="#">UI/UX Design</a></h3>
-                <p>Ut maximus enim dolor. Aenean auctor risus eget tincidunt lobortis. Donec tincidunt bibendum gravida. </p>
-              </div>
-            </div>
-          </div> --}}
-          <!-- Services item -->
-          {{-- <div class="col-md-6 col-lg-4 col-xs-12">
-            <div class="services-item wow fadeInRight" data-wow-delay="1.5s">
-              <div class="icon">
-                <i class="lni-mobile"></i>
-              </div>
-              <div class="services-content">
-                <h3><a href="#">App Development</a></h3>
-                <p>Ut maximus enim dolor. Aenean auctor risus eget tincidunt lobortis. Donec tincidunt bibendum gravida. </p>
-              </div>
-            </div>
-          </div> --}}
-          <!-- Services item -->
-          {{-- <div class="col-md-6 col-lg-4 col-xs-12">
-            <div class="services-item wow fadeInRight" data-wow-delay="1.8s">
-              <div class="icon">
-                <i class="lni-rocket"></i>
-              </div>
-              <div class="services-content">
-                <h3><a href="#">User Friendly interface</a></h3>
-                <p>Ut maximus enim dolor. Aenean auctor risus eget tincidunt lobortis. Donec tincidunt bibendum gravida. </p>
-              </div>
-            </div>
-          </div> --}}
         </div>
       </div>
     </section>
@@ -304,15 +273,6 @@
                   <p>Apart from our 1% commission, there are no hidden charges</p>
                 </div>
               </div>
-              {{-- <div class="box-item wow fadeInLeft" data-wow-delay="0.9s">
-                <span class="icon">
-                  <i class="lni-cog"></i>
-                </span>
-                <div class="text">
-                  <h4>HTML5, CSS3 & SASS</h4>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry</p>
-                </div>
-              </div> --}}
             </div>
           </div>
           <div class="col-lg-4 col-md-12 col-sm-12 col-xs-12">
@@ -331,15 +291,6 @@
                   <p>Receive payment in less than twenty four hours</p>
                 </div>
               </div>
-              {{-- <div class="box-item wow fadeInRight" data-wow-delay="0.6s">
-                <span class="icon">
-                  <i class="lni-layers"></i>
-                </span>
-                <div class="text">
-                  <h4>Multi-purpose Template</h4>
-                  <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry.</p>
-                </div>
-              </div> --}}
               <div class="box-item wow fadeInRight" data-wow-delay="0.9s">
                 <span class="icon">
                   <i class="lni-leaf"></i>
@@ -633,7 +584,6 @@
 
     <!-- Firebase Scripts -->
     <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-auth.js"></script>
     <script src="https://www.gstatic.com/firebasejs/6.3.3/firebase-firestore.js"></script>
     <script>
       const firebaseConfig = {

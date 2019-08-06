@@ -2,11 +2,16 @@
 
 namespace App\Http\Controllers;
 
-use App\Company;
+use App\User;
 use Illuminate\Http\Request;
 
 class CompanyController extends Controller
 {
+    public function company(User $user){
+      $user = auth()->user();
+
+      return view('profile.company', compact('user'));
+    }
     /**
      * Update the specified resource in storage.
      *
@@ -14,7 +19,7 @@ class CompanyController extends Controller
      * @param  \App\Company  $company
      * @return \Illuminate\Http\Response
      */
-    public function updateCompany(Request $request, Company $company)
+    public function updateCompany(Request $request, User $user)
     {
       $this->validate($request, [
         'name' => 'required',
@@ -41,7 +46,14 @@ class CompanyController extends Controller
         );
       }
 
-      return back()->with('companyUpdate', 'Company successfully updated');
+      return back()->withStatus(__('Company successfully updated'));
+    }
+
+    public function account(User $user)
+    {
+      $user = auth()->user();
+
+      return view('profile.account', compact('user'));
     }
 
     /**
@@ -51,65 +63,25 @@ class CompanyController extends Controller
      * @param  \App\Company  $company
      * @return \Illuminate\Http\Response
      */
-    public function account(Company $company, $id)
+    public function updateAccount(Request $request)
     {
-      $company = Company::findOrFail($id);
-
-      $this->validate(request(),
+      $this->validate($request,
       [
-        'name' => 'required',
-        'email' => 'required|email',
-        'subject' => 'required',
-        'message' => 'required'
+        'ae_address' => 'required|min:12',
+        'bank_name' => 'required|min:3',
+        'baccount_name' => 'required|min:5',
+        'baccount_no' => 'required|min:9'
       ]);
 
-      if(isset($company) ){
-        $user = $company->user;
-        if(!$user->verified) {
-          $company->user->verified = 1;
-          $company->user->save();
-        }
-      }
+      $user = auth()->user();
 
-      $company->ae_address = request('ae_address');
-      $company->bank_name = request('bank_name');
-      $company->baccount_name = request('baccount_name');
-      $company->baccount_no = request('baccount_no');
+      $user->ae_address = request('ae_address');
+      $user->bank_name = request('bank_name');
+      $user->baccount_name = request('baccount_name');
+      $user->baccount_no = request('baccount_no');
 
-      $company->save();
+      $user->update();
 
-      return redirect('profile.edit')->with('accountUpdate', 'Account successfully updated');
-    }
-
-    public function updateC(Profile $profile)
-    {
-      $this->validate(request(),
-      [
-        'title'=>'required',
-        'name'=>'required',
-        'location'=>'required',
-        'date'=>'required',
-        'time'=>'required',
-        'description'=>'required',
-      ]);
-
-      $profile->title = request('title');
-      $profile->slug = str_slug(request('title'),'-');
-      $profile->name = request('name');
-      $profile->location = request('location');
-      $profile->date = request('date');
-      $profile->time = request('time');
-      $profile->description = request('description');
-
-      if(request('image')) {
-        $image = request('image');
-        $imageName = time().$image->getClientOriginalName();
-        $image->move('uploads/pro$profiles/images/',$imageName);
-        $profile->image = 'uploads/pro$profiles/images/'.$imageName;
-      }
-
-      $profile->save();
-
-      return back()->withPasswordStatus(__('Password successfully updated.'));
+      return back()->withStatus(__('Account successfully updated'));
     }
   }

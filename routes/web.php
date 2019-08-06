@@ -16,6 +16,9 @@ use SebastianBergmann\CodeCoverage\Report\Html\Dashboard;
 // FrontEnd
 Route::get('/', 'WelcomeController@index')->name('index');
 Route::post('/contact', 'WelcomeController@contact')->name('contact.form');
+// Route::get('/email', function() {
+//   return view('emails.template');
+// });
 
 // Authentication
 Route::get('login/github', 'Auth\OAuthController@redirectToGitHub')->name('github');
@@ -32,7 +35,9 @@ Route::group(['middleware' => ['auth','verified']], function () {
 	Route::get('profile', ['as' => 'profile.edit', 'uses' => 'ProfileController@edit']);
   Route::put('profile', ['as' => 'profile.update', 'uses' => 'ProfileController@update']);
   Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);
-  Route::put('profile/company', 'ProfileController@updateCompany')->name('profile.company');
-	Route::post('profile/account', 'ProfileController@account')->name('profile.account');
+  Route::get('profile/company', 'CompanyController@company')->name('company.edit');
+  Route::put('profile/company', 'CompanyController@updateCompany')->name('company.update');
+  Route::get('profile/account', 'CompanyController@account')->name('account.edit');
+  Route::post('profile/account', 'CompanyController@updateAccount')->name('account.update');
 });
 

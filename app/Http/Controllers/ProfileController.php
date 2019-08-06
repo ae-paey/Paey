@@ -16,9 +16,9 @@ class ProfileController extends Controller
      *
      * @return \Illuminate\View\View
      */
-    public function edit(User $user)
+    public function edit()
     {
-      return view('profile.edit', compact('user'));
+      return view('profile.edit');
     }
 
     /**
@@ -45,46 +45,5 @@ class ProfileController extends Controller
       auth()->user()->update(['password' => Hash::make($request->get('password'))]);
 
       return back()->withPasswordStatus(__('Password successfully updated.'));
-    }
-
-    /**
-     * Update the profile
-     *
-     * @param  \App\Http\Requests\CompanyRequest  $request
-     * @return \Illuminate\Http\RedirectResponse
-     */
-    public function updateCompany(CompanyRequest $request)
-    {
-      auth()->user()->update($request->all());
-
-      return back()->with('companyUpdate', 'Company successfully updated');
-    }
-
-    /**
-     * Change the account
-     *
-     * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Company  $company
-     * @return \Illuminate\Http\Response
-     */
-    
-    public function account(User $user)
-    {
-      $this->validate(request(),
-      [
-        'ae_address'=>'required',
-        'bank_name'=>'required',
-        'baccount_name'=>'required',
-        'baccount_no'=>'required',
-      ]);
-
-      $user->ae_address = request('ae_address');
-      $user->bank_name = request('bank_name');
-      $user->baccount_name = request('baccount_name');
-      $user->baccount_no = request('baccount_no');
-
-      $user->save();
-
-      return back()->with('accountUpdate', 'Account successfully updated');
     }
 }
