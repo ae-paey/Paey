@@ -2,12 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\User;
 use App\Http\Requests\ProfileRequest;
 use App\Http\Requests\PasswordRequest;
-use App\Http\Requests\CompanyRequest;
-use App\Http\Requests\AccountRequest;
 use Illuminate\Support\Facades\Hash;
+use App\Company;
 
 class ProfileController extends Controller
 {
@@ -16,9 +14,11 @@ class ProfileController extends Controller
      *
      * @return \Illuminate\View\View
      */
-    public function edit()
+    public function edit(Company $company)
     {
-      return view('profile.edit');
+      $company = Company::where('user_id', auth()->user()->id)->first();
+
+      return view('profile.edit', compact('company'));
     }
 
     /**

@@ -176,7 +176,7 @@
 															<td align="center">
 																<table border="0" cellspacing="0" cellpadding="0">
 																	<tr>
-																		<td class="text-button text-button2" style="color:#f7296e; font-family:'Roboto', Arial,sans-serif; font-size:14px; line-height:18px; border:2px solid #f7296e; padding:12px 30px; text-align:center; border-radius:24px;"><a href="{{url('profile')}}" target="_blank" class="link4" style="color:#f7296e; text-decoration:none;"><span class="link4" style="color:#f7296e; text-decoration:none;">Complete Profile <i class="fa fa-arrow-right"></i></span></a></td>
+																		<td class="text-button text-button2" style="color:#f7296e; font-family:'Roboto', Arial,sans-serif; font-size:14px; line-height:18px; border:2px solid #f7296e; padding:12px 30px; text-align:center; border-radius:24px;"><a href="{{ route('company.create') }}" target="_blank" class="link4" style="color:#f7296e; text-decoration:none;"><span class="link4" style="color:#f7296e; text-decoration:none;">Complete Profile <i class="fa fa-arrow-right"></i></span></a></td>
 																	</tr>
 																</table>
 															</td>

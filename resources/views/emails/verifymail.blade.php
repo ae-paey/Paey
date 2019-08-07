@@ -1,101 +1,261 @@
 <!DOCTYPE html>
-<html lang="{{ str_replace('_', '-', app()->getLocale()) }}" itemscope itemtype="https://schema.org/Organization">
+<html>
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no">
-  <meta name="robots" content="index, follow">
-  <meta name="googlebot" content="index, follow" />
-  <meta name="google" content="translate" />
-
-  <title>Pæy Verification Mail</title>
-
-  <!-- Styles -->
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="http://paey.herokuapp.com/frontend/assets/css/bootstrap.min.css" >
-  <!-- Icon -->
-  <link rel="stylesheet" href="http://paey.herokuapp.com/frontend/assets/fonts/line-icons.css">
-  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-  <!-- Owl carousel -->
-  <link rel="stylesheet" href="http://paey.herokuapp.com/frontend/assets/css/owl.carousel.min.css">
-  <link rel="stylesheet" href="http://paey.herokuapp.com/frontend/assets/css/owl.theme.css">
+	<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="format-detection" content="date=no" />
+	<meta name="format-detection" content="address=no" />
+	<meta name="format-detection" content="telephone=no" />
+  <meta name="x-apple-disable-message-reformatting" />
   
-  <!-- Animate -->
-  <link rel="stylesheet" href="http://paey.herokuapp.com/frontend/assets/css/animate.css">
-  <!-- Main Style -->
-  <link rel="stylesheet" href="http://paey.herokuapp.com/frontend/assets/css/main.css">
-  <!-- Responsive Style -->
-  <link rel="stylesheet" href="http://paey.herokuapp.com/frontend/assets/css/responsive.css">
-</head>
-<body>
-  <section class="section-padding">
-    <div class="container">
-      <div class="section-header text-center">
-        <a><h2 class="wow fadeInDown" data-wow-delay="0.3s"><img src="http://paey.herokuapp.com/images/logo-text.png" alt="Pæy Logo"></h2></a>
-        <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
-      </div>
-      <div class="site-heading">
-        <p class="mb-3">Hello <strong class="text-primary">{{ $user['name'] }}</strong>, welcome to <strong class="text-primary">{{ config('app.name') }}</p>
-      </div>
-      <div class="text">
-        <p>Your registered Email Address is <span class="text-primary">{{ $user['email'] }}</span>, Kindly complete your profile by clicking on the below link to register your company</p>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet" />
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+  
+	<title>Pæy Contact Email</title>
+	
+	<style type="text/css" media="screen">
+		body { padding:0 !important; margin:0 !important; display:block !important; min-width:100% !important; width:100% !important; background:#f4f4f4; -webkit-text-size-adjust:none }
+		a { color:#f7296e; text-decoration:none }
+		p { padding:0 !important; margin:0 !important } 
+		img { -ms-interpolation-mode: bicubic; /* Allow smoother rendering of resized image in Internet Explorer */ }
+		.mcnPreviewText { display: none !important; }
 
-        <a href="{{url('profile', $user->profile->id)}}" class="btn btn-common mt-3">Complete Profile</a>
-      </div>
-    </div>
-  </section>
-  <section class="section-padding">
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6 col-md-6 col-xs-12 wow fadeInLeft" data-wow-delay="0.3s">           
-          <div class="cta-text">
-            <h4>>Pæy</h4>
-            <p>Are You a Customer or a Student that want to pay his/her fee or even trade from fiat to crypto currency? Check out these links</p>
-          </div>
-        </div>
-        <div class="col-lg-6 col-md-6 col-xs-12 text-right wow fadeInRight" data-wow-delay="0.3s">
-          </br><a href="{{ config('app.aepp_url') }}/pay" target="_blank" class="btn btn-common">Pay Here</a>
-          <a href="{{ config('app.aepp_url') }}/trade" target="_blank" class="btn btn-border">Trade Here</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <footer class="footer-area section-padding">
-    <div class="container">
-      <div class="container">
-        <div class="row text-center">
-          <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 col-mb-12">
-            <div class="widget">
-              <h3 class="footer-logo"><img src="http://paey.herokuapp.com/images/logo.png') }}" alt="Pæy Logo"></h3>
-              <div class="textwidget">
-                <p>Changing the future of transactions</p>
-              </div>
-              <div class="social-icon">
-                <a class="facebook" href="#"><i class="lni-facebook-filled"></i></a>
-                <a class="twitter" href="#"><i class="lni-twitter-filled"></i></a>
-                <a class="telegram" href="#"><i class="fab fa-telegram-plane"></i></a>
-                <a class="linkedin" href="#"><i class="lni-linkedin-filled"></i></a>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>  
-    </div> 
-    <div id="copyright">
-      <div class="container">
-        <div class="row align-items-center justify-content-xl-between copyright-content">
-          <div class="col-xl-6">
-            <div class="text-center text-xl-left">
-              <p>Copyright &copy; {{ now()->year }} <a href="{{ config('app.url') }}">{{ config('app.name') }}</a> | All Right Reserved</p>
-            </div>
-          </div>
-          <div class="col-xl-6">
-            <div class="text-center text-xl-right">
-              <p><a href="https://docs.google.com/document/d/1KFZBIPrK3xLY96s2BI6RbPt3N_fmT244aqR2mQZ4ETM/edit?usp=sharing" target="_blank">Terms of Service</a> | <a href="https://docs.google.com/document/d/1q7_-cH3s3lbPo0-20CjObyyClylVHTYsrl2ys9F9tHc/edit?usp=sharing" target="_blank">Privacy Policy</a></p>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>    
-  </footer>
+				
+		/* Mobile styles */
+		@media only screen and (max-device-width: 480px), only screen and (max-width: 480px) {
+			.mobile-shell { width: 100% !important; min-width: 100% !important; }
+			.bg { background-size: 100% auto !important; -webkit-background-size: 100% auto !important; }
+			
+			.text-header,
+			.m-center { text-align: center !important; }
+			
+			.center { margin: 0 auto !important; }
+			.container { padding: 0px 10px 10px 10px !important }
+			
+			.td { width: 100% !important; min-width: 100% !important; }
+
+			.text-nav { line-height: 28px !important; }
+			.p30 { padding: 15px !important; }
+
+			.m15 { height: 15px !important; }
+			.p30-15 { padding: 30px 15px !important; }
+			.p40 { padding: 20px !important; }
+
+			.m-td,
+			.m-hide { display: none !important; width: 0 !important; height: 0 !important; font-size: 0 !important; line-height: 0 !important; min-height: 0 !important; }
+
+			.m-block { display: block !important; }
+
+			.fluid-img img { width: 100% !important; max-width: 100% !important; height: auto !important; }
+
+			.column,
+			.column-top,
+			.column-empty,
+			.column-empty2,
+			.column-dir-top { float: left !important; width: 100% !important; display: block !important; }
+			.column-empty { padding-bottom: 10px !important; }
+			.column-empty2 { padding-bottom: 20px !important; }
+			.content-spacing { width: 15px !important; }
+		}
+	</style>
+</head>
+<body class="body" style="padding:0 !important; margin:0 !important; display:block !important; min-width:100% !important; width:100% !important; background:#f4f4f4; -webkit-text-size-adjust:none;">
+	<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#f4f4f4">
+		<tr>
+			<td align="center" valign="top">
+				<table width="650" border="0" cellspacing="0" cellpadding="0" class="mobile-shell">
+					<tr>
+						<td class="td container" style="width:650px; min-width:650px; font-size:0pt; line-height:0pt; margin:0; font-weight:normal; padding:0px 0px 40px 0px;">
+							<!-- Header -->
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="p30-15" style="padding: 20px 0px 10px 0px;">
+										<table width="100%" border="0" cellspacing="0" cellpadding="0">
+											<tr>
+												<th class="column-top" width="145" style="font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal; vertical-align:top;">
+													<table width="100%" border="0" cellspacing="0" cellpadding="0">
+														<tr>
+															<td class="img m-center" style="font-size:0pt; line-height:0pt; text-align:left;"><img src="https://aepp-paey.web.app/assets/images/logo-text.png" border="0" alt="" /></td>
+														</tr>
+													</table>
+												</th>
+												<th class="column-empty" width="1" style="font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal; vertical-align:top;"></th>
+												<th class="column" style="font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal;">
+													<table width="100%" border="0" cellspacing="0" cellpadding="0">
+														<tr>
+															<td class="text-header" style="color:#999999; font-family:'Roboto', Arial,sans-serif; font-size:12px; line-height:16px; text-align:right; text-transform:uppercase;"><a href="{{ config('app.url') }}" target="_blank" class="link2" style="color:#999999; text-decoration:none;"><span class="link2" style="color:#999999; text-decoration:none;">Open Website</span></a></td>
+														</tr>
+													</table>
+												</th>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							<!-- END Header -->
+
+							<!-- Head -->
+							<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#">
+								<tr>
+									<td class="img" height="10" bgcolor="#f7296e" style="font-size:0pt; line-height:0pt; text-align:left;">&nbsp;</td>
+								</tr>
+								<tr>
+									<td class="p30-15" style="padding: 45px 30px;" bgcolor="#ffffff" align="center">
+										<table width="100%" border="0" cellspacing="0" cellpadding="0">
+											<tr>
+												<td class="center" style="text-align:center; padding-bottom:20px;"><img src="https://aepp-paey.web.app/assets/images/banner-text.png" width="20%"></td>
+											</tr>
+											<tr>
+												<td class="text center" style="color:#666666; font-family:'Roboto', Arial,sans-serif; font-size:16px; line-height:28px; text-align:center;">
+                          Pæy is a decentralized payment system that allows payment with crypto currencies
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							<!-- END Head -->
+
+							<!-- Hero -->
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td style="padding-bottom: 10px;">
+										<table width="100%" border="0" cellspacing="0" cellpadding="0">
+											<tr>
+												<td class="p30-15" style="padding: 15px 30px;" bgcolor="#f7296e">
+													<table width="100%" border="0" cellspacing="0" cellpadding="0">
+														<tr>
+															<th class="column" style="font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal;">
+																<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																	<tr>
+																		<td class="text white m-center" style="font-family:'Roboto', Arial,sans-serif; font-size:16px; line-height:28px; text-align:left; color:#ffffff;">Changing the future of transactions</td>
+																	</tr>
+																</table>
+															</th>
+															<th class="column-empty" width="1" style="font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal; vertical-align:top;"></th>
+															<th class="column" width="200" style="font-size:0pt; line-height:0pt; padding:0; margin:0; font-weight:normal;">
+																<table width="100%" border="0" cellspacing="0" cellpadding="0">
+																	<tr>
+																		<td align="right">
+																			<table class="center" border="0" cellspacing="0" cellpadding="0" style="text-align:center;">
+																				<tr>
+																					<td class="text-button white-button" style="font-family:'Roboto', Arial,sans-serif; font-size:14px; line-height:18px; padding:12px 30px; text-align:center; border-radius:24px; color:#ffffff; border:2px solid #ffffff;"><a href="https://aepp-paey.web.app" target="_blank" class="link-white" style="color:#ffffff; text-decoration:none;"><span class="link-white" style="color:#ffffff; text-decoration:none;">See æpp</span> &nbsp; <i class="fa fa-arrow-right"></i></a></td>
+																				</tr>
+																			</table>
+																		</td>
+																	</tr>
+																</table>
+															</th>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+              <!-- END Hero -->
+
+              <!-- Title + Text + Button -->
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="pb10" style="padding-bottom:10px;">
+										<table width="100%" border="0" cellspacing="0" cellpadding="0">
+											<tr>
+												<td class="p30 p30-15" bgcolor="#ffffff" style="padding:30px;">
+													<table width="100%" border="0" cellspacing="0" cellpadding="0">
+														<tr>
+															<td class="h3 pb25" style="color:#050505; font-family:'Roboto', Arial,sans-serif; font-size:20px; line-height:28px; text-align:left; padding-bottom:25px;">Dear {{ $user['name'] }},</td>
+														</tr>
+														<tr>
+															<td class="text pb25" style="color:#666666; font-family:'Roboto', Arial,sans-serif; font-size:16px; line-height:28px; text-align:left; padding-bottom:7px;">You are finally ready to start receiving pæyment. Please confirm the details below are correct</td>
+														</tr>
+														<tr>
+															<td class="text pb25" style="color:#666666; font-family:'Roboto', Arial,sans-serif; font-size:16px; line-height:28px; text-align:left; padding-bottom:10px;">
+                                Company Name: {{ $company['name'] }} <br>
+                                Company Email: {{ $company['email'] }} <br>
+                                Role: {{ $company['position'] }} <br>
+                                Phone Number: {{ $company['phone'] }} <br>
+                                æternity Address: {{ $company['ae_address'] }} <br>
+                                Bank Name: {{ $company['bank_name'] }} <br>
+                                Account Name: {{ $company['baccount_name'] }} <br>
+                                Account Number: {{ $company['baccount_no'] }} <br>
+                              </td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							<!-- END Title + Text + Button -->
+              
+              <!-- CTA -->
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td style="padding-bottom: 10px;">
+										<table width="100%" border="0" cellspacing="0" cellpadding="0" bgcolor="#ffffff">
+											<tr>
+												<td class="p30-15" style="padding: 50px 30px;">
+													<table width="100%" border="0" cellspacing="0" cellpadding="0">
+														<tr>
+															<td class="h2 center pb20" style="color:#050505; font-family:'Roboto', Arial,sans-serif; font-size:28px; line-height:34px; text-align:left; padding-bottom:20px;">Above Details Wrong?</td>
+														</tr>
+														<tr>
+															<td class="text center pb30" style="color:#666666; font-family:'Roboto', Arial,sans-serif; font-size:16px; line-height:28px; text-align:left; padding-bottom:30px;">If you the above detials are wrong you can edit them by kindly  by clicking on the below link to start receiving pæyment</td>
+														</tr>
+														<!-- Button -->
+														<tr>
+															<td align="center">
+																<table border="0" cellspacing="0" cellpadding="0">
+																	<tr>
+																		<td class="text-button text-button2" style="color:#f7296e; font-family:'Roboto', Arial,sans-serif; font-size:14px; line-height:18px; border:2px solid #f7296e; padding:12px 30px; text-align:center; border-radius:24px;"><a href="{{ route('company.edit',$company) }}" target="_blank" class="link4" style="color:#f7296e; text-decoration:none;"><span class="link4" style="color:#f7296e; text-decoration:none;">Edit Profile <i class="fa fa-arrow-right"></i></span></a></td>
+																	</tr>
+																</table>
+															</td>
+														</tr>
+														<!-- END Button -->
+													</table>
+												</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							<!-- END CTA -->
+							 
+							<!-- Footer -->
+							<table width="100%" border="0" cellspacing="0" cellpadding="0">
+								<tr>
+									<td class="p30-15" style="padding: 50px 30px;" bgcolor="#ffffff">
+										<table width="100%" border="0" cellspacing="0" cellpadding="0">
+											<tr>
+												<td align="center">
+													<table border="0" cellspacing="0" cellpadding="0">
+														<tr>
+                              <td class="center" style="text-align:center; padding-bottom:7px;"><img src="https://aepp-paey.web.app/assets/images/logo.png" width="60%"></td>
+														</tr>
+													</table>
+												</td>
+											</tr>
+											<tr>
+												<td class="text-footer1 pb10" style="color:#999999; font-family:'Roboto', Arial,sans-serif; font-size:16px; line-height:20px; text-align:center; padding-bottom:5px;">Pæy--changing the future of transaction</td>
+											</tr>
+											<tr>
+												<td class="text-footer2 pb30" style="color:#999999; font-family:'Roboto', Arial,sans-serif; font-size:12px; line-height:26px; text-align:center; padding-bottom:7px;">GDG EKSU HUB, Ekiti State University, Ekiti State, Nigeria</td>
+											</tr>
+										</table>
+									</td>
+								</tr>
+							</table>
+							<!-- END Footer -->
+						</td>
+					</tr>
+				</table>
+			</td>
+		</tr>
+	</table>
 </body>
 </html>

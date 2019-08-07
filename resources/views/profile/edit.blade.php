@@ -7,7 +7,7 @@
 @section('content')
     @include('users.partials.header', [
         'title' => __('Hello') . ' '. auth()->user()->name,
-        'description' => __('This is your profile page. You can see the transaction you\'ve made with your work and lots more'),
+        'description' => __('This is your profile page. You can edit your company details, change your password and lots more'),
         'class' => 'col-lg-7'
     ])   
 
@@ -57,8 +57,11 @@
                       <h3 class="mb-0">My account</h3>
                     </div>
                     <div class="col-4 text-right">
-                      <a href="{{ route('company.edit') }}" class="btn btn-sm btn-primary">Company</a>
-                      <a href="{{ route('account.edit') }}" class="btn btn-sm btn-primary">Account</a>
+                      @if (!auth()->user()->company)
+                        <a href="{{ route('company.create') }}" class="btn btn-sm btn-primary">Add Company</a>
+                      @else
+                        <a href="{{ route('company.edit', $company) }}" class="btn btn-sm btn-primary">Edit Company</a> 
+                      @endif
                     </div>
                   </div>
                 </div>

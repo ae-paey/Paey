@@ -35,9 +35,6 @@ Route::group(['middleware' => ['auth','verified']], function () {
 	Route::get('profile', ['as' => 'profile.edit', 'uses' => 'ProfileController@edit']);
   Route::put('profile', ['as' => 'profile.update', 'uses' => 'ProfileController@update']);
   Route::put('profile/password', ['as' => 'profile.password', 'uses' => 'ProfileController@password']);
-  Route::get('profile/company', 'CompanyController@company')->name('company.edit');
-  Route::put('profile/company', 'CompanyController@updateCompany')->name('company.update');
-  Route::get('profile/account', 'CompanyController@account')->name('account.edit');
-  Route::post('profile/account', 'CompanyController@updateAccount')->name('account.update');
+  Route::resource('profile/company', 'CompanyController');
 });
 
