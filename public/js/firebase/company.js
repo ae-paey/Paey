@@ -43,14 +43,3 @@ $('#editCompany').click(function() {
     console.error("Error updating company to firebase: ", error);
   });
 });
-
-var db = firebase.firestore();
-
-db.collection("Companies").get().then(function(querySnapshot) {
-  querySnapshot.forEach(function(doc) {
-    var companies = doc.data();
-    // console.log(doc.id, " => ", doc.data());
-    console.log("Company Name => ", companies.companyName)
-    console.log("Company Address => ", companies.companyAddress)
-  });
-});
