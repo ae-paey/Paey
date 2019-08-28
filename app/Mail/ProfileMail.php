@@ -12,7 +12,7 @@ class ProfileMail extends Mailable
     use Queueable, SerializesModels;
 
     public $user;
-		public $mail_name;
+	  public $mail_name;
     public $mail_address;
 
     /**
@@ -23,7 +23,7 @@ class ProfileMail extends Mailable
     public function __construct($user)
     {
       $this->user = $user;
-			$this->mail_name = env('MAIL_FROM_NAME');
+	    $this->mail_name = env('MAIL_FROM_NAME');
       $this->mail_address = env('MAIL_FROM_ADDRESS');
     }
 
