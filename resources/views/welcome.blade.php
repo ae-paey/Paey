@@ -7,7 +7,7 @@
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
       gtag('js', new Date());
-    
+
       gtag('config', 'UA-144562288-3');
     </script>
     <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
@@ -20,13 +20,13 @@
 
     <meta name="title" content="{{ config('app.name', 'Pæy') }}">
     <meta name="keywords" content="emmanueljet, Emmanuel Joseph (Jet), Emmanuel Joseph, Payment Company, pay online, college, high school, university, secondary school, aeternity, nigeria, decentralized, blockchain, schools, students, fee, fees">
-    <meta name="description" content="Pæy is a decentralized payment system that allows payment with crypto currencies">
+    <meta name="description" content="Pæy is a decentralized payment system that allows payment with cryptocurrencies">
 
     <!-- Google -->
     <meta name="google-site-verification" content="8RCgoezuBrJpU-i8YvfKP2PCwG3ApMeF7kp31hEoGRM" />
     <link itemprop="url" rel="canonical" href="{{ url()->current() }}" />
     <meta itemprop="name" content="{{ config('app.name', 'Pæy') }}">
-    <meta itemprop="description" content="Pæy is a decentralized payment system that allows payment with crypto currencies">
+    <meta itemprop="description" content="Pæy is a decentralized payment system that allows payment with cryptocurrencies">
     <meta itemprop="image" content="{{ asset('images/logo.png') }}">
 
     <!-- Facebook -->
@@ -34,7 +34,7 @@
     <meta property="og:type" content="website" />
     <meta property="og:url" content="{{ url()->current() }}" />
     <meta property="og:title" content="{{ config('app.name', 'Pæy') }}" />
-    <meta property="og:description" content="Pæy is a decentralized payment system that allows payment with crypto currencies" />
+    <meta property="og:description" content="Pæy is a decentralized payment system that allows payment with cryptocurrencies" />
     <meta property="og:image" content="{{ asset('images/logo.png') }}" />
     <meta property="og:image:type" content="image/png" />
     <meta property="og:image:alt" content="Pæy Image" />
@@ -45,10 +45,10 @@
     <meta name="twitter:site" content="@ae_paey">
     <meta name="twitter:creator" content="@emmanuelJet_">
     <meta name="twitter:title" content="{{ config('app.name', 'Pæy') }}">
-    <meta name="twitter:description" content="Pæy is a decentralized payment system that allows payment with crypto currencies">
+    <meta name="twitter:description" content="Pæy is a decentralized payment system that allows payment with cryptocurrencies">
     <meta name="twitter:image:src" content="{{ asset('images/logo.png') }}">
     <meta name="twitter:image:alt" content="Pæy Image">
-    
+
     {{--  Favicon  --}}
     <link rel="apple-touch-icon" sizes="180x180" href="{{ asset('favicon/apple-touch-icon.png') }}">
     <link rel="icon" type="image/png" sizes="32x32" href="{{ asset('favicon/favicon-32x32.png') }}">
@@ -65,7 +65,7 @@
     <!-- Owl carousel -->
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/owl.carousel.min.css') }}">
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/owl.theme.css') }}">
-    
+
     <!-- Animate -->
     <link rel="stylesheet" href="{{ asset('frontend/assets/css/animate.css') }}">
     <!-- Main Style -->
@@ -80,7 +80,7 @@
       <nav class="navbar navbar-expand-md bg-inverse fixed-top scrolling-navbar">
         <div class="container">
           <!-- Brand and toggle get grouped for better mobile display -->
-          <a href="/" class="navbar-brand"><img src="{{ asset('images/logo-text.png') }}"></a>       
+          <a href="/" class="navbar-brand"><img src="{{ asset('images/logo-text.png') }}"></a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
             <i class="lni-menu"></i>
           </button>
@@ -140,12 +140,12 @@
 
       <!-- Hero Area Start -->
       <div id="hero-area" class="hero-area-bg">
-        <div class="container">      
+        <div class="container">
           <div class="row">
             <div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
               <div class="contents">
                 <img src="{{ asset('images/banner-text.png') }}" alt="Banner Text Logo" class="head-title">
-                <p>Pæy is a decentralized payment system that allows payment with crypto currencies</p>
+                <p>Pæy is a decentralized payment system that allows payment with cryptocurrencies</p>
                 <div class="header-button">
                   <a href="{{ route('register') }}" class="btn btn-common">Get Started</a>
                   <a href="#about" class="btn btn-border">Learn More</a>
@@ -155,10 +155,10 @@
             <div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
               <div class="intro-img">
                 <img class="img-fluid" src="{{ asset('images/banner.png') }}" alt="">
-              </div>            
+              </div>
             </div>
-          </div> 
-        </div> 
+          </div>
+        </div>
       </div>
       <!-- Hero Area End -->
 
@@ -181,7 +181,7 @@
               </div>
               <div class="services-content">
                 <h3><a href="#">Trade</a></h3>
-                <p>Converting fiat currencies into crypto currencies and vice versa</p>
+                <p>Converting fiat currencies into cryptocurrencies and vice versa</p>
               </div>
             </div>
           </div>
@@ -227,7 +227,7 @@
                 </div>
                 <div class="content">
                   <p>
-                    Pæy is a decentralized payment system that has made paying more efficient and easy by allowing payment with crypto currencies. We are targeting companies that would love to reach a larger audience, institutions interested in making payment easier for her students, and other firms that want an efficient way of receiving payment. Our target cuts across business individuals, companies, institutions, churches and lots more.
+                    Pæy is a decentralized payment system that has made paying more efficient and easy by allowing payment with cryptocurrencies. We are targeting companies that would love to reach a larger audience, institutions interested in making payment easier for her students, and other firms that want an efficient way of receiving payment. Our target cuts across business individuals, companies, institutions, churches and lots more.
                   </p>
                   <p>
                     Pæy idea was birthed as a result of our experience as students in Ekiti state university, Ekiti State, Nigeria where bank charges extra fees over every transaction made and creates extreme stress for students. We started Pæy because we want to save students and customers stress and time by making payment possible at the very comfort of their rooms or offices using blockchain technologies
@@ -248,7 +248,7 @@
     <!-- Features Section Start -->
     <section id="features" class="section-padding">
       <div class="container">
-        <div class="section-header text-center">          
+        <div class="section-header text-center">
           <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Awesome Features</h2>
           <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
         </div>
@@ -305,12 +305,12 @@
         </div>
       </div>
     </section>
-    <!-- Features Section End --> 
-    
+    <!-- Features Section End -->
+
     <!-- Team Section Start -->
     <section id="team" class="section-padding bg-gray">
       <div class="container">
-        <div class="section-header text-center">          
+        <div class="section-header text-center">
           <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Meet our family</h2>
           <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
         </div>
@@ -319,20 +319,20 @@
             <!-- Team Item Starts -->
             <div class="team-item wow fadeInRight" data-wow-delay="0.4s">
               <div class="team-img">
-                <img class="img-fluid" src="{{ asset('images/teams/anuoluwa_popoola.png') }}" alt="Anuoluwa Popoola">
+                <img class="img-fluid" src="{{ asset('images/teams/udah_gombe.png') }}" alt="Udah Gombe">
               </div>
               <div class="contetn">
                 <div class="info-text">
-                  <h3><a href="#">Anuoluwa Popoola</a></h3>
-                  <p>Lead UI/UX Designer</p>
+                  <h3><a href="#">Udah Gombe</a></h3>
+                  <p>Financial Officer</p>
                 </div>
-                <p>I am passionate about helping brands communicate effectively to their customers through design</p>
-                <ul class="social-icons">
+                <p>I am passionate about helping brands manage the financial aspect of their startup or company</p>
+                {{-- <ul class="social-icons">
                   <li><a href="https://instagram.com/just_anuoluwa" target="_blank" rel="nofollow"><i class="fab fa-instagram" style="color:#fd1d1d" aria-hidden="true"></i></a></li>
                   <li><a href="https://telegram.me/justanuoluwa" target="_blank" rel="nofollow"><i class="fab fa-telegram-plane" style="color:#0088cc" aria-hidden="true"></i></a></li>
                   <li><a href="https://wa.me/2348168263502" target="_blank" rel="nofollow"><i class="fab fa-whatsapp" style="color:#25d366" aria-hidden="true"></i></a></li>
                   <li><a href="mailto:justanuoluwa2000@gmail.com" rel="nofollow"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
-                </ul>
+                </ul> --}}
               </div>
             </div>
             <!-- Team Item Ends -->
@@ -341,16 +341,17 @@
             <!-- Team Item Starts -->
             <div class="team-item wow fadeInRight" data-wow-delay="0.2s">
               <div class="team-img">
-                <img class="img-fluid" src="{{ asset('images/teams/abimbola_abe.png') }}" alt="Abimbola Abe">
+                <img class="img-fluid" src="{{ asset('images/teams/micheal_jerry.png') }}" alt="Adetunji Michael">
               </div>
               <div class="contetn">
                 <div class="info-text">
-                  <h3><a href="#">Abimbola Abe</a></h3>
+                  <h3><a href="#">Adetunji Michael</a></h3>
                   <p>Growth Hacker</p>
                 </div>
-                <p>I am a Content creator and business developer. I am passionate about helping start ups grow</p>
+                <p>I am a brand strategist & crypto enthusiasts. I help brand identify their market and scale up sales leveraging on digital skills.</p>
                 <ul class="social-icons">
-                  <li><a href="mailto:abeabimbola40@gmail.com" rel="nofollow"><i class="fa fa-envelope" aria-hidden="true"></i></a></li>
+                  <li><a href="https://twitter.com/themichaeljerry" target="_blank" rel="nofollow"><i class="fab fa-twitter" style="color:#1da1f2" aria-hidden="true"></i></a></li>
+                  <li><a href="https://www.facebook.com/adetunji.michael.184" target="_blank" rel="nofollow"><i class="fab fa-facebook" style="color:#3b5998" aria-hidden="true"></i></a></li>
                 </ul>
               </div>
             </div>
@@ -403,12 +404,12 @@
       </div>
     </section>
     <!-- Team Section End -->
-    
+
     <!-- Call To Action Section Start -->
     <section id="cta" class="section-padding">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 col-md-6 col-xs-12 wow fadeInLeft" data-wow-delay="0.3s">           
+          <div class="col-lg-6 col-md-6 col-xs-12 wow fadeInLeft" data-wow-delay="0.3s">
             <div class="cta-text">
               <h4>Pæy</h4>
               <p>Are You a Customer or a Student that want to pay his/her fee or even trade from fiat to crypto currency? Check out these links</p>
@@ -424,13 +425,13 @@
     <!-- Call To Action Section Start -->
 
     <!-- Contact Section Start -->
-    <section id="contact" class="section-padding bg-gray">    
+    <section id="contact" class="section-padding bg-gray">
       <div class="container">
-        <div class="section-header text-center">          
+        <div class="section-header text-center">
           <h2 class="section-title wow fadeInDown" data-wow-delay="0.3s">Countact Us</h2>
           <div class="shape wow fadeInDown" data-wow-delay="0.3s"></div>
         </div>
-        <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.3s">   
+        <div class="row contact-form-area wow fadeInUp" data-wow-delay="0.3s">
           <div class="col-lg-7 col-md-12 col-sm-12">
             <div class="contact-block">
               <form method="post" action="{{ route('contact.form') }}">
@@ -444,7 +445,7 @@
                           <strong>{{ $errors->first('name') }}</strong>
                         </span>
                       @endif
-                    </div>                                 
+                    </div>
                   </div>
                   <div class="col-md-6">
                     <div class="form-group">
@@ -454,7 +455,7 @@
                           <strong>{{ $errors->first('email') }}</strong>
                         </span>
                       @endif
-                    </div> 
+                    </div>
                   </div>
                     <div class="col-md-12">
                     <div class="form-group">
@@ -467,7 +468,7 @@
                     </div>
                   </div>
                   <div class="col-md-12">
-                    <div class="form-group"> 
+                    <div class="form-group">
                       <textarea class="form-control" name="message" placeholder="Your Message" rows="7">{{ old('message') }}</textarea>
                       @if ($errors->has('message'))
                         <span class="text-danger" role="alert">
@@ -483,10 +484,10 @@
                           {{ Session::get('success') }}
                         </div>
                       @endif
-                      <div class="clearfix"></div> 
+                      <div class="clearfix"></div>
                     </div>
                   </div>
-                </div>            
+                </div>
               </form>
             </div>
           </div>
@@ -496,7 +497,7 @@
             </div>
           </div>
         </div>
-      </div> 
+      </div>
     </section>
     <!-- Contact Section End -->
 
@@ -524,7 +525,7 @@
               <ul class="footer-link">
                 <li><a href="{{ config('app.aepp_url') }}/trade" target="_blank">Trade</a></li>
                 <li><a href="{{ config('app.aepp_url') }}/pay" target="_blank">Pay</a></li>
-                <li><a href="{{ route('register') }}">Company</a></li>       
+                <li><a href="{{ route('register') }}">Company</a></li>
               </ul>
             </div>
             <div class="col-lg-3 col-md-6 col-sm-12 col-xs-12">
@@ -550,8 +551,8 @@
               </ul>
             </div>
           </div>
-        </div>  
-      </div> 
+        </div>
+      </div>
       <div id="copyright">
         <div class="container">
           <div class="row align-items-center justify-content-xl-between copyright-content">
@@ -567,15 +568,15 @@
             </div>
           </div>
         </div>
-      </div>   
-    </footer> 
+      </div>
+    </footer>
     <!-- Footer Section End -->
 
     <!-- Go to Top Link -->
     <a href="#" class="back-to-top">
       <i class="lni-arrow-up"></i>
     </a>
-    
+
     <!-- Preloader -->
     <div id="preloader">
       <div class="loader" id="loader-1"></div>
@@ -598,7 +599,7 @@
       // Initialize Firebase
       firebase.initializeApp(firebaseConfig);
     </script>
-    
+
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script src="{{ asset('frontend/assets/js/jquery-min.js') }}"></script>
     <script src="{{ asset('frontend/assets/js/popper.min.js') }}"></script>
@@ -607,7 +608,7 @@
     <script src="{{ asset('frontend/assets/js/wow.js') }}"></script>
     <script src="{{ asset('frontend/assets/js/jquery.nav.js') }}"></script>
     <script src="{{ asset('frontend/assets/js/scrolling-nav.js') }}"></script>
-    <script src="{{ asset('frontend/assets/js/jquery.easing.min.js') }}"></script>  
+    <script src="{{ asset('frontend/assets/js/jquery.easing.min.js') }}"></script>
     <script src="{{ asset('frontend/assets/js/main.js') }}"></script>
   </body>
 </html>

@@ -61,7 +61,7 @@ class CompanyController extends Controller
       $company->bank_name = request('bank_name');
       $company->baccount_name = request('baccount_name');
       $company->baccount_no = request('baccount_no');
-      
+
       $company->save();
 
       $user = User::where('id', $company->user_id)->first();
@@ -127,7 +127,7 @@ class CompanyController extends Controller
       $company->bank_name = request('bank_name');
       $company->baccount_name = request('baccount_name');
       $company->baccount_no = request('baccount_no');
-      
+
       $company->save();
 
       return redirect()->route('profile.edit')->withStatus(__('Company successfully Updated.'));

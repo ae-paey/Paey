@@ -14,13 +14,13 @@ class OAuthController extends Controller
   {
     return Socialite::driver('github')->redirect();
   }
-  
+
   public function handleGitHubCallback()
   {
     $userSocial = Socialite::driver('github')->user();
-      
+
     $findUser = User::where('email',$userSocial->email)->first();
-      
+
     if($findUser) {
       Auth::login($findUser);
 
@@ -45,13 +45,13 @@ class OAuthController extends Controller
   {
     return Socialite::driver('google')->redirect();
   }
-  
+
   public function handleGoogleCallback()
   {
     $userSocial = Socialite::driver('google')->user();
-      
+
     $findUser = User::where('email',$userSocial->email)->first();
-      
+
     if($findUser) {
       Auth::login($findUser);
 

@@ -8,31 +8,31 @@
 	<meta name="format-detection" content="address=no" />
 	<meta name="format-detection" content="telephone=no" />
   <meta name="x-apple-disable-message-reformatting" />
-  
+
   <link href="https://fonts.googleapis.com/css?family=Roboto:400,400i,700,700i" rel="stylesheet" />
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
-  
+
 	<title>Pæy Contact Email</title>
-	
+
 	<style type="text/css" media="screen">
 		body { padding:0 !important; margin:0 !important; display:block !important; min-width:100% !important; width:100% !important; background:#f4f4f4; -webkit-text-size-adjust:none }
 		a { color:#f7296e; text-decoration:none }
-		p { padding:0 !important; margin:0 !important } 
+		p { padding:0 !important; margin:0 !important }
 		img { -ms-interpolation-mode: bicubic; /* Allow smoother rendering of resized image in Internet Explorer */ }
 		.mcnPreviewText { display: none !important; }
 
-				
+
 		/* Mobile styles */
 		@media only screen and (max-device-width: 480px), only screen and (max-width: 480px) {
 			.mobile-shell { width: 100% !important; min-width: 100% !important; }
 			.bg { background-size: 100% auto !important; -webkit-background-size: 100% auto !important; }
-			
+
 			.text-header,
 			.m-center { text-align: center !important; }
-			
+
 			.center { margin: 0 auto !important; }
 			.container { padding: 0px 10px 10px 10px !important }
-			
+
 			.td { width: 100% !important; min-width: 100% !important; }
 
 			.text-nav { line-height: 28px !important; }
@@ -108,7 +108,7 @@
 											</tr>
 											<tr>
 												<td class="text center" style="color:#666666; font-family:'Roboto', Arial,sans-serif; font-size:16px; line-height:28px; text-align:center;">
-                          Pæy is a decentralized payment system that allows payment with crypto currencies
+                          Pæy is a decentralized payment system that allows payment with cryptocurrencies
 												</td>
 											</tr>
 										</table>
@@ -191,7 +191,7 @@
 								</tr>
 							</table>
 							<!-- END Title + Text + Button -->
-              
+
               <!-- CTA -->
 							<table width="100%" border="0" cellspacing="0" cellpadding="0">
 								<tr>
@@ -225,7 +225,7 @@
 								</tr>
 							</table>
 							<!-- END CTA -->
-							 
+
 							<!-- Footer -->
 							<table width="100%" border="0" cellspacing="0" cellpadding="0">
 								<tr>

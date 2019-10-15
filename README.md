@@ -4,7 +4,7 @@
   <img src="https://aepp-paey.web.app/assets/images/logo-text.png">
 </p>
 
-Pæy is a decentralized payment system that has made paying more efficient and easy by allowing payment with crypto currencies. We are targeting companies that would love to reach a larger audience, institutions interested in making payment easier for her students, and other firms that want an efficient way of receiving payment. Our target cuts across business individuals, companies, institutions, churches and lots more.
+Pæy is a decentralized payment system that has made paying more efficient and easy by allowing payment with cryptocurrencies. We are targeting companies that would love to reach a larger audience, institutions interested in making payment easier for her students, and other firms that want an efficient way of receiving payment. Our target cuts across business individuals, companies, institutions, churches and lots more.
 
 ## Services
 
