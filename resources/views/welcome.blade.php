@@ -348,7 +348,7 @@
                   <h3><a href="#">Adetunji Michael</a></h3>
                   <p>Growth Hacker</p>
                 </div>
-                <p>I am a brand strategist & crypto enthusiasts. I help brand identify their market and scale up sales leveraging on digital skills.</p>
+                <p>I am a brand strategist. I help brand identify their market and scale up sales leveraging on digital skills.</p>
                 <ul class="social-icons">
                   <li><a href="https://twitter.com/themichaeljerry" target="_blank" rel="nofollow"><i class="fab fa-twitter" style="color:#1da1f2" aria-hidden="true"></i></a></li>
                   <li><a href="https://www.facebook.com/adetunji.michael.184" target="_blank" rel="nofollow"><i class="fab fa-facebook" style="color:#3b5998" aria-hidden="true"></i></a></li>
